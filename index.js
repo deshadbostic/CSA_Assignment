@@ -15,6 +15,12 @@ app.get('/',(req,res) =>{
   app.get('/24',(req,res) =>{ 
     res.render('ubinarymulti.ejs');
   });
+  app.get('/25',(req,res) =>{ 
+    res.render('boothslaw.ejs');
+  });
+  app.get('/26',(req,res) =>{ 
+    res.render('ubinarydivis.ejs');
+  });
   
 
 const PORT=process.env.PORT || 5000;
