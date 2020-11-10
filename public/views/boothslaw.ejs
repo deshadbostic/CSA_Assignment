@@ -7,7 +7,45 @@
 </head>
 <body>
     <main>
-        fill in
+        <h1>Booth’s Algorithm for Two’s Complement Multiplication</h1>
+
+<h2>What is Booth’s Algorithm?</h2>
+
+<p>Booth’s Algorithm is an algorithm used to determine the product of two signed binary digits. To determine this product, first we need to identify the <b>Accumulator (A)</b> which always starts at 0000, the <b>Multiplicand (M)</b>, the <b>Multiplier (Q)</b> and <b>Q-1</b> which represents the last bit shifted from the Multiplier. To determine the action being taken, we compare the last digit currently in the Multiplier with the digit in Q-1 column. </p>
+<br/>
+
+<img src="./images/actions.png" alt="actions table">
+
+<br/>
+
+<p>The algorithm is then continuously shifted for as many cycles as the length of the biggest binary number in the algorithm. Let’s look at an example so we can see how Booth’s Algorithm works.</p>
+</br/>
+
+<p><h3>Say we want to find the product of 7 and 3.</h3></p>
+<p>The value of the <b>Accumulator</b> starts at 0000.</p>
+<p>The <b>Multiplicand (M)</b> can be either 7 or 3 but for this example we will use 7.</p>
+<p>Since the <b>Multiplicand (M)</b> is 7 this means the <b>Multiplier (Q)</b> will be 3.</p>
+<p><b>Binary representations:</b></p>
+<p>7 = 0111 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 = 0011</p>
+<p>2’s complement of 3 = 1001 (We will use this later)</p>
+<p>As we know 7 * 3 = 21.</p>
+<p>21 = 10101</p>
+<p>So in the answer we should have 10101.</p>
+<p><b>Now let’s set up the table</b></p>
+<br/>
+
+<img src="./images/boothtb1.png" alt="booth table"> <br/>
+<img src="./images/boothtb2.png" alt="booth table 2"><br/>
+
+<p>After the 4th cycle, we should have the correct answer in AQ.</p>
+<p>We know 21 = 10101</p>
+<p>AQ = 00010101 which is the binary equivalent of 21 in the 8 bit form.</p>
+<p><b>Questions:</b></p>
+<p>Try Booth's using:</p>
+<ul>
+<li>Multiplicand (M) = 3 & Multiplier (Q) = 7</li>
+<li>Multiplicand (M) = 8 & Multiplier (Q) = 7</li>
+</ul>
     </main> 
 </body>
 </html>
