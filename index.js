@@ -25,7 +25,7 @@ app.get('/',(req,res) =>{
     res.render('Howto.ejs');
   });
   app.get('/32',(req,res) =>{ 
-    res.render('How2.ejs');
+    res.render('Howto2.ejs');
   });
 
 const PORT=process.env.PORT || 5000;
