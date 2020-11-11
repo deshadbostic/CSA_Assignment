@@ -1,0 +1,38 @@
+.navbar{
+	overflow: hidden;
+	background-color: #0c1528;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a{
+	float: left;
+	display: block;
+	color: #243e40;
+	text-align: center;
+	padding: 18px 18px;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.navbar a:hover{
+	background:  #212b3a;
+	color: #99dcd1;
+	transition: all .5s;
+}
+
+.main{
+  background: url(images/UBDwp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+
