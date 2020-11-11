@@ -19,9 +19,14 @@ app.get('/',(req,res) =>{
     res.render('boothslaw.ejs');
   });
   app.get('/26',(req,res) =>{ 
-    res.render('ubinarydivis.ejs');
+    res.render('UBD.ejs');
   });
-  
+  app.get('/31',(req,res) =>{ 
+    res.render('Howto.ejs');
+  });
+  app.get('/32',(req,res) =>{ 
+    res.render('How2.ejs');
+  });
 
 const PORT=process.env.PORT || 5000;
 app.listen(PORT,() =>console.log(`server started ${PORT}`));
