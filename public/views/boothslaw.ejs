@@ -34,18 +34,77 @@
 <p><b>Now let’s set up the table</b></p>
 <br/>
 
-<img src="./images/boothtb1.png" alt="booth table"> <br/>
-<img src="./images/boothtb2.png" alt="booth table 2"><br/>
+<img src="./images/boothex1.png" alt="booth table"> <br/>
 
 <p>After the 4th cycle, we should have the correct answer in AQ.</p>
 <p>We know 21 = 10101</p>
 <p>AQ = 00010101 which is the binary equivalent of 21 in the 8 bit form.</p>
-<p><b>Questions:</b></p>
-<p>Try Booth's using:</p>
-<ul>
-<li>Multiplicand (M) = 3 & Multiplier (Q) = 7</li>
-<li>Multiplicand (M) = 8 & Multiplier (Q) = 7</li>
-</ul>
+<br/>
+
+<p><h3>Now let’s find the product of 7 and -3.</h3></p>
+
+<p>The <b>Multiplicand (M)</b> will be 7.</p>
+<p>The <b>Multiplier (Q)</b> will be 3.</p>
+<p><b>Binary representations:</b></p>
+<p>7 = 0111 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -3 = 1101</p>
+<p>The 2’s complement of 7 is 1001</p>
+<p>As we know 7 * -3 = -21.</p>
+<p>-21 = 01011</p>
+<p>So in the answer we should have 01011.</p>
+<p><b>Now let’s set up the table</b></p>
+<br/>
+
+<img src="./images/boothex2.png" alt="booth table"> <br/>
+
+
+<p>After the 4th cycle, we should have the correct answer in AQ.</p>
+<p>We know -21 = 01011</p>
+<p>AQ = 11101011 which is the binary equivalent of -21 in the 8 bit form.</p>
+<br/>
+
+<p><h3>Next we’ll find the product of 9 and 13.</h3></p>
+
+<p>The <b>Multiplicand (M)</b> will be 9.</p>
+<p>The <b>Multiplier (Q)</b> will be 13.</p>
+<p><b>Binary representations:</b></p>
+<p>9 = 01001 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 = 01101</p>
+<p>The 2’s complement of 9 is 10111</p>
+<p>As we know 9 * 13 = 117</p>
+<p>117 = 01110101</p>
+<p>So in the answer we should have 01110101.</p>
+<p>Our larger binary number is made up of 5 digits so this should take 5 cycles.</p>
+<p><b>Now let’s set up the table</b></p>
+<br/>
+
+<img src="./images/boothex3.png" alt="booth table"> <br/>
+
+
+<p>After the 5th cycle, we should have the correct answer in AQ.</p>
+<p>We know 117 = 01110101</p>
+<p>AQ = 0001110101 which is the binary equivalent of 117 in the 10 bit form.</p>
+<br/>
+
+<p><h3>Finally we’ll find the product of -9 and -13.</h3></p>
+
+<p>The <b>Multiplicand (M)</b> will be -9.</p>
+<p>The <b>Multiplier (Q)</b> will be -13.</p>
+<p><b>Binary representations:</b></p>
+<p>9 = 10111 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 = 10011</p>
+<p>The 2’s complement of 9 is 01001</p>
+<p>As we know 9 * 13 = 117</p>
+<p>117 = 01110101</p>
+<p>So in the answer we should have 01110101.</p>
+<p>Our larger binary number is made up of 5 digits so this should take 5 cycles.</p>
+<p><b>Now let’s set up the table</b></p>
+<br/>
+
+<img src="./images/boothex4.png" alt="booth table"> <br/>
+
+
+<p>After the 5th cycle, we should have the correct answer in AQ.</p>
+<p>We know 117 = 01110101</p>
+<p>AQ = 0001110101 which is the binary equivalent of 117 in the 10 bit form.</p>
+
     </main> 
 </body>
 </html>
