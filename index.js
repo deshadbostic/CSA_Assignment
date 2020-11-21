@@ -27,6 +27,9 @@ app.get('/',(req,res) =>{
   app.get('/32',(req,res) =>{ 
     res.render('Howto2.ejs');
   });
+  app.get('/33',(req,res) =>{ 
+    res.render('Howto3.ejs');
+  });
 
 const PORT=process.env.PORT || 5000;
 app.listen(PORT,() =>console.log(`server started ${PORT}`));
