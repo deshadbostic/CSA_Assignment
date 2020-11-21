@@ -1,0 +1,91 @@
+<html style="font-family: 'Montserrat'; color:  #99dcd1; background-color:  #111c2e">
+
+  <head>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/UBDstyle.css">
+
+    <title>How To Do Unsigned Binary Division Pt.2</title>
+
+  </head>
+
+  <body style="padding-left: 0px; margin: 0px;">
+
+    <div class="navbar">
+        <a href="./"> BACK TO MAIN PAGE </a>
+        <a href="./26"> UNSIGNED BINARY DIVISION </a>
+        <a href="./31"> HOW TO </a>
+        <a href="./32"> HOW TO PT.2 </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 style="text-align:center; text-decoration-line: underline;">How To Do Unsigned Binary Division Pt.2</h1>
+
+    <div style="text-align: justify-all; padding-left:50px;padding-right:50px; font-size: 21px;">
+
+      <p>Now let's show you how to do this with Unsigned Binary numbers:</p>
+
+      <p>Let's divide 11010 by 101.</p>
+
+      <img src="./images/ustep1.png"> 
+      <br>
+      <br>
+
+      <p>We first ask, can 101 go into 1? No, it cannot. We put a 0 on the Quotient and bring the 1 over to the next digit. Next, can 101 go into 11? No, it cannot. We put another 0 on the Quotient and move the 11 to the next digit in the Dividend. Can 101 go into 110? Yes it can, one time. We place a 1 on the Quotient and then perform binary subtraction.</p>
+
+      <p>Quick note on binary subtraction:</p>
+
+      <p>0 - 0 = 0</p>
+      <p>0 - 1 = 1 (we borrow a bit from the next significant digit(next digit to the left))</p>
+      <p>1 - 0 = 1</p>
+      <p>1 - 1 = 0</p>
+
+      <img src="./images/ustep2.png"> 
+      <br>
+      <br>
+
+      <p>We perform binary subtraction of 101 from 110 and get 001.</p>
+
+      <img src="./images/ustep3.png">
+      <br>
+      <br>
+
+      <p>Notice the Most significant bit is highlighted. In the Binary division we exclude the most significant bit after the subtraction. The next step is to bring down the next bit of the dividend to the result of the binary subtraction.</p>
+
+      <img src="./images/ustep5.png">
+      <br>
+      <br>
+
+      <p>Next, we ask, how many times can 101 go into 011? 0 times. We add a 0 on the Quotient and since 101 cannot go into 011, we subtract 000 from 011.</p>
+
+      <img src="./images/ustep6.png">
+      <br>
+      <br>
+
+      <p>Next, we perform binary subtraction once again and we are left with 011. Again the Most Significant Bit is excluded.</p>
+
+      <img src="./images/ustep7.png">
+      <br>
+      <br>
+
+      <p>Once again, We bring down the next bit from the Dividend and repeat the process. We ask can 101 go into 110? Yes it can, 1 time. We add a 1 to the Quotient and subtract 101 from 110.</p>
+
+      <img src="./images/ustep8.png">
+      <br>
+      <br>
+
+      <p>Finally after we subtract we get 001 and our Binary division is finished with a Quotient of 00101 and a Remainder of 1.</p>
+
+      <img src="./images/ustep9.png">
+      <br>
+      <br>
+
+    </div>
+
+  </body>
+
+</html>
