@@ -8,3 +8,10 @@ table{
 button{
     background-color: teal;
 }
+a.normal{
+    color: white;
+    background-color: teal;
+    padding: 10px 20px;
+  }
+  
+  
