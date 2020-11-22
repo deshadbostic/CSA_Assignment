@@ -30,6 +30,8 @@ app.get('/',(req,res) =>{
   app.get('/33',(req,res) =>{ 
     res.render('Howto3.ejs');
   });
-
+  app.get('/11',(req,res) =>{ 
+    res.render('ubinaryquiz.ejs');
+  });
 const PORT=process.env.PORT || 5000;
 app.listen(PORT,() =>console.log(`server started ${PORT}`));

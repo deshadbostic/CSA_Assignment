@@ -1,7 +1,7 @@
 # CSA_Assignment
-first git clone repo //need to install git
+first git clone repo //need to install git //ignore if you already have files           //but still install git
 then install nodejs if you havent already
-then in the folder on your computer type git install
+then in the folder on your computer type npm install
 to start server then navigate to folder again and type node start then go to the port number
 
 if you want to upload or push your changes u need to send me your github name so i can add you
