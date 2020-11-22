@@ -1,3 +1,8 @@
 body{
     background-color: rgb(104, 182, 222);
 }
+a.normal{
+    color: white;
+    background-color: teal;
+    padding: 10px 20px;
+  }
