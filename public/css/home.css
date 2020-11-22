@@ -5,6 +5,11 @@ body{
     background-color: rgb(228, 213, 213);
 }
 
+footer{
+  position: absolute;
+  bottom:0%;
+  left: 70%;
+}
 
 a.normal{
   color: white;
